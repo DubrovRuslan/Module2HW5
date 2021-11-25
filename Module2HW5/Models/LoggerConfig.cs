@@ -12,7 +12,7 @@ namespace Module2HW5.Models
         public string TimeFormat { get; set; }
         public string DirectoryPath { get; set; }
         public string BackUpDirectotyPath { get; set; }
-        public string FileName { get; set; }
         public string FileExtension { get; set; }
+        public int MaxLogCount { get; set; }
     }
 }
