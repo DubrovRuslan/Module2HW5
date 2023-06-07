@@ -1,0 +1,10 @@
+{
+  "Logger": {
+    "LineSeparator": 10,
+    "TimeFormat": "hh.mm.ss dd.MM.yyyy",
+    "DirectoryPath": "Logs/",
+    "BackUpDirectotyPath": "BackUp/",
+    "FileExtension": ".txt",
+    "MaxLogCount": 3
+  }
+}
