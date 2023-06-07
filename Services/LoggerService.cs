@@ -61,8 +61,8 @@ namespace Module2HW5.Services
                 if (logCount > _loggerConfig.MaxLogCount)
                 {
                     _fileService.CreateDirectory(_rootDirectory, _loggerConfig.BackUpDirectotyPath);
-                    string sourcePath = $"{_rootDirectory}{_loggerConfig.DirectoryPath}";
-                    string destinationPath = $"{_rootDirectory}{_loggerConfig.BackUpDirectotyPath}";
+                    var sourcePath = $"{_rootDirectory}{_loggerConfig.DirectoryPath}";
+                    var destinationPath = $"{_rootDirectory}{_loggerConfig.BackUpDirectotyPath}";
                     _fileService.MoveOldFiles(sourcePath, destinationPath, _loggerConfig.MaxLogCount);
                 }
             }

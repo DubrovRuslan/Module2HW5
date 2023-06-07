@@ -89,9 +89,9 @@ namespace Module2HW5.Services
                 var allFilesInDirectory = sourceDirectoryInfo.GetFiles();
                 Array.Sort(allFilesInDirectory, new FileInfoComparer());
                 var count = allFilesInDirectory.Length;
-                for (int i = 0; i < count - maxFileCount; i++)
+                for (var i = 0; i < count - maxFileCount; i++)
                 {
-                    string fileName = allFilesInDirectory[i].Name;
+                    var fileName = allFilesInDirectory[i].Name;
                     File.Move($"{sourcePath}{fileName}", $"{destinationPath}{fileName}");
                 }
             }

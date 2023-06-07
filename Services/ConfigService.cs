@@ -12,7 +12,7 @@ namespace Module2HW5.Services
         {
             try
             {
-                var configFile = File.ReadAllText("Config.json");
+                var configFile = File.ReadAllText("config.json");
                 return JsonConvert.DeserializeObject<Config>(configFile);
             }
             catch (Exception)
